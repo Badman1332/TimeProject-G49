@@ -25,17 +25,14 @@ public class BirthDay {
             return;
         }
 
-
         LocalDate birthday = LocalDate.of(birthYear, birthMonth, birthDay);
 
                 DayOfWeek dayOfWeek = birthday.getDayOfWeek();
 
         System.out.println("This is your day of birth : " + dayOfWeek);
 
-
         scanner.close();
     }
-
         private static boolean isValidDate(int month, int day) {
         if (month < 1 || month > 12) {
             return false;
